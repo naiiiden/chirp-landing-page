@@ -572,7 +572,10 @@ header .signin:hover {
     overflow-x: auto;
   }
   .customers .articles_wrapper .invisibleonmobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
   }
   .customers .articles_wrapper article {
     min-width: 15rem;
