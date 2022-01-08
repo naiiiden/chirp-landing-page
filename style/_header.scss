@@ -1,0 +1,128 @@
+.main_header_wrapper {
+    background: #fbf8f3;
+}
+
+header {
+    .logo {
+        color: #3180f5;
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-style: italic;
+        user-select: none;
+    }
+
+    a {
+        color: #595959;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .signin {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        background: #1da1f2;
+        border-radius: .25rem;
+        padding: 1rem;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+            background: #43b7ff;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        position: relative;
+    
+        .logo {
+            color: #3180f5;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
+        .hamburger {
+            border: none;
+            background: transparent;
+            z-index: 99;
+            position: fixed;
+            right: 0;
+            padding: 1.5rem;
+        }
+    
+        nav {
+    
+            .nav-ul {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                background: rgba(251, 248, 243, 0.75);
+                backdrop-filter: blur(.1rem);
+                list-style-type: none;
+                display: none;
+                z-index: 98;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                position: fixed;
+                width: 13.5rem;
+                height: 100vh;
+                right: -999rem;
+                top: 0;
+                bottom: 0;
+                transition: right 2.5s ease;
+    
+                .signin {
+                    padding: .75rem;
+                }
+    
+                &.show {
+                    right: 0;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .hamburger {
+            display: none;
+        }
+    
+        nav {
+            .nav-ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 3rem 9rem;
+    }
+}
