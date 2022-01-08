@@ -346,4 +346,107 @@ header .signin:hover {
     font-size: 1.1rem;
   }
 }
+
+.features {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.features .subsections_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.features .subsections_container .subsection_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.features .subsections_container section {
+  border: 1px solid #c4c4c4;
+  border-radius: .25rem;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
+  height: 222px;
+}
+
+.features .subsections_container section .icon {
+  font-size: 1.5rem;
+}
+
+.features .subsections_container section p {
+  color: #737373;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 3rem;
+    gap: 1.5rem;
+  }
+  .features h2 {
+    font-size: 2.25rem;
+  }
+  .features .subsections_container {
+    gap: 1.25rem;
+  }
+  .features .subsections_container .subsection_row {
+    gap: 1.25rem;
+  }
+  .features .subsections_container section {
+    height: 10rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features {
+    padding: 5rem 9rem;
+    gap: 2rem;
+  }
+  .features h2 {
+    font-size: 2.5rem;
+  }
+  .features .subsections_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .features .subsections_container section {
+    height: 12.5rem;
+    gap: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
