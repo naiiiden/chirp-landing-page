@@ -262,6 +262,10 @@ header .signin:hover {
   cursor: pointer;
 }
 
+.main_illustration_wrapper main .links_container a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   .main_illustration_wrapper {
     padding: 0 3rem 3rem 3rem;

@@ -57,6 +57,10 @@
                 gap: .25rem;
                 text-decoration: none;
                 cursor: pointer;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
