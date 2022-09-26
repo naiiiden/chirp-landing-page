@@ -145,7 +145,7 @@ header .signin:hover {
   align-items: flex-start;
 }
 .main_illustration_wrapper main p {
-  color: #737373;
+  color: #545454;
 }
 .main_illustration_wrapper main span {
   color: #1f7898;
@@ -442,7 +442,7 @@ header .signin:hover {
   text-align: center;
 }
 .plan .text p {
-  color: #737373;
+  color: #545454;
 }
 .plan .plan_container {
   background: #fbf8f3;
@@ -459,7 +459,7 @@ header .signin:hover {
   gap: 0.5rem;
 }
 .plan .plan_container .monthly_price_container p {
-  color: #737373;
+  color: #545454;
   font-weight: 500;
 }
 .plan .plan_container .monthly_price_container span {
@@ -479,7 +479,7 @@ header .signin:hover {
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
-  color: #737373;
+  color: #545454;
 }
 .plan .plan_container .signin {
   display: flex;
